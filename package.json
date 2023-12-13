@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "dev:web": "vite --config vite.config.web.ts",
     "build": "vue-tsc --noEmit && vite build",
+    "build:web": "vue-tsc && vite build --config vite.config.web.ts",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
