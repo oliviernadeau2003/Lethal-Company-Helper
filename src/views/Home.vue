@@ -1,7 +1,16 @@
 <template>
-  <HelloWorld />
+  <DefaultLayout>
+
+    <div>
+      <h1>Home</h1>
+    </div>
+
+  </DefaultLayout>
 </template>
 
 <script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+import DefaultLayout from '@/layouts/default/Default.vue';
+
 </script>
+
+<style scoped></style>
