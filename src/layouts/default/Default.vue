@@ -1,12 +1,18 @@
 <template>
-  <v-app>
-    <default-bar />
+  <v-app style='font-family: "3270-Regular";'>
+    <NavBar />
 
-    <default-view />
+    <v-main style="margin: 16px;">
+      <slot></slot>
+    </v-main>
+
+    <Footer />
   </v-app>
 </template>
 
 <script lang="ts" setup>
-import DefaultBar from './AppBar.vue'
-import DefaultView from './View.vue'
+import NavBar from './AppBar.vue'
+import Footer from './Footer.vue'
 </script>
+
+<style scoped></style>

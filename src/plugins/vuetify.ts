@@ -19,20 +19,24 @@ import { aliases, md } from 'vuetify/iconsets/md'
 export default createVuetify({
   theme: {
     defaultTheme: 'dark',
-    // themes: {
-    //   light: {
-    //     colors: {
-    //       primary: '#1867C0',
-    //       secondary: '#5CBBF6',
-    //     },
-    //   },
-    //   dark: {
-    //     colors: {
-    //       primary: '#121212',
-    //       secondary: '',
-    //     }
-    //   }
-    // },
+    themes: {
+      // light: {
+      //   colors: {
+      //     primary: '#1867C0',
+      //     secondary: '#5CBBF6',
+      //   },
+      // },
+      // dark: {
+      //   colors: {
+      //     primary: '#121212',
+      //     secondary: '',
+      //   }
+      lethalCompany: {
+        colors: {
+          terminalGreen: "#01fc01",
+        }
+      },
+    }
   },
   icons: {
     defaultSet: 'md',
@@ -41,4 +45,10 @@ export default createVuetify({
       md,
     },
   },
+
+  // #01fc01
 })
+
+export enum Colors {
+  terminalGreen = "#01fc01",
+}

@@ -5,6 +5,8 @@
       <span class="font-weight-bold">Lethal Company Helper</span>
     </v-app-bar-title>
 
+    <!-- <v-text-field label="Search" hide-details="auto" clearable></v-text-field> -->
+
     <v-btn @click="displaySearchBar">
       <v-icon icon="search" class="material-icons md-28" />
     </v-btn>
