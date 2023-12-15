@@ -1,11 +1,14 @@
 <template>
   <v-app-bar flat>
+
     <v-app-bar-title>
-      <!-- <v-icon icon="mdi-circle-slice-4" /> -->
-      <span class="font-weight-bold">Lethal Company Helper</span>
+      <!-- <v-img src="@/assets/icons/Lethal_Company_Colored.svg" width="64" height="auto" /> -->
+      <span class="font-weight-bold">
+        Lethal Company Helper
+      </span>
     </v-app-bar-title>
 
-    <!-- <v-text-field label="Search" hide-details="auto" clearable></v-text-field> -->
+
 
     <v-btn @click="displaySearchBar">
       <v-icon icon="search" class="material-icons md-28" />
@@ -24,9 +27,6 @@
     <v-btn @click="displayAccount">
       <v-icon icon="account_circle" class="material-icons md-28" />
     </v-btn>
-
-
-
 
   </v-app-bar>
 </template>

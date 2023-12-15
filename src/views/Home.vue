@@ -1,12 +1,14 @@
 <template>
   <DefaultLayout>
 
-    <div>
-      <h1>Home</h1>
-      <p>Hello everyone, this is my new web site ive created for Leathal company</p>
-    </div>
-
-    <v-btn text="Awesome" :color=Colors.terminalGreen></v-btn>
+    <!-- <v-card title="Home" elevation="5" width="475">
+      <v-card-text>
+        <p>Hello everyone, this is my new web site ive created for Leathal company.</p>
+      </v-card-text>
+      <v-card-actions>
+        <v-btn text="Awesome" elevation="5"></v-btn>
+      </v-card-actions>
+    </v-card> -->
 
   </DefaultLayout>
 </template>
