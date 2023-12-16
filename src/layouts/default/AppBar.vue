@@ -1,6 +1,7 @@
 <template>
   <v-app-bar flat>
 
+    <v-app-bar-nav-icon />
     <v-app-bar-title>
       <!-- <v-img src="@/assets/icons/Lethal_Company_Colored.svg" width="64" height="auto" /> -->
       <span class="font-weight-bold">
