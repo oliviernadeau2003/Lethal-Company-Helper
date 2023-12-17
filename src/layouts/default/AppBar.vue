@@ -1,7 +1,7 @@
 <template>
   <v-app-bar flat>
 
-    <v-app-bar-nav-icon />
+    <v-app-bar-nav-icon @click.stop="navigationDrawer = !navigationDrawer" />
     <v-app-bar-title>
       <!-- <v-img src="@/assets/icons/Lethal_Company_Colored.svg" width="64" height="auto" /> -->
       <span class="font-weight-bold">
@@ -30,15 +30,28 @@
     </v-btn>
 
   </v-app-bar>
+
+  <v-navigation-drawer :width="230" v-model="navigationDrawer">
+    <!-- <v-list-item title="My Application" /> -->
+    <v-divider></v-divider>
+    <v-list-item link @click="$router.push({ name: 'home' })" title="Home" prepend-icon="home"></v-list-item>
+    <v-divider></v-divider>
+    <v-list-item link @click="$router.push({ name: 'moons' })" title="Moons" prepend-icon="circle"></v-list-item>
+    <v-list-item link @click="$router.push({ name: 'monsters' })" title="Monsters" prepend-icon="skull"></v-list-item>
+    <v-list-item link @click="$router.push({ name: 'items' })" title="Items" prepend-icon="construction"></v-list-item>
+  </v-navigation-drawer>
 </template>
 
 <script lang="ts" setup>
 import { useTheme } from 'vuetify'
+import { ref } from 'vue'
+
+const navigationDrawer = ref(false);
 
 const theme = useTheme()
 
 function toggleTheme() {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  // theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
 }
 
 function displaySetting() { }
