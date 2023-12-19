@@ -45,10 +45,4 @@ export default createVuetify({
       md,
     },
   },
-
-  // #01fc01
 })
-
-export enum Colors {
-  terminalGreen = "#01fc01",
-}
