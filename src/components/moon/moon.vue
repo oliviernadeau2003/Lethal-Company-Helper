@@ -3,8 +3,8 @@
 
         <v-card elevation="4">
             <v-card-title>{{ moon?.name }}</v-card-title> <!-- ?.toUpperCase() ?? -->
-            <v-card-text>
-                {{ moon?.travelCost }}
+            <v-card-text class="">
+                Travel Cost : '{{ moon?.travelCost }} CP |
                 <!-- <v-btn text="See Map" elevation="3"></v-btn>-->
                 <moonDetails :moon="moon" />
             </v-card-text>
