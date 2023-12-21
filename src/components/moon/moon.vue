@@ -10,6 +10,28 @@
             </v-card-text>
         </v-card>
 
+        <!-- <v-card>
+            <v-card-title>{{ moon?.name }}</v-card-title>
+
+            <v-card-subtitle>
+                Hazard Level: {{ moon?.hazardLevel }}, Difficulty: {{ moon?.difficulty }}
+            </v-card-subtitle>
+
+            <v-card-text>
+                <div>Travel Cost: {{ moon?.travelCost }}</div>
+                <div>Main Entrance: {{ moon?.mainEntrance }}</div>
+                <div>Fire Exist: {{ moon?.fireExist }}</div>
+                <div>Conditions: {{ moon?.conditions }}</div>
+                <div>History: {{ moon?.history }}</div>
+                <div>Fauna:
+                    <v-chip v-for="(creature, index) in moon?.fauna" :key="index" label>
+                        {{ creature }}
+                    </v-chip>
+                </div>
+            </v-card-text>
+        </v-card> -->
+
+
     </div>
 </template>
 <script setup lang="ts">
