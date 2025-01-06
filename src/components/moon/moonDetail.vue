@@ -8,6 +8,8 @@
             <v-card :title=moon?.name>
                 <v-card-text>
 
+                    <v-img :width="auto" aspect-ratio="16/9" cover :src=moon?.mapImage></v-img>
+
                 </v-card-text>
 
                 <v-card-actions>

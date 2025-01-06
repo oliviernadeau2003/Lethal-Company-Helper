@@ -8,6 +8,7 @@ export default class Moon {
     conditions: string = ""
     history: string = ""
     fauna: string = ""  //! MAKE FAUNA A ARRAY OF CREATURE  => Fauna: Array<string | number> = []
+    mapImage: string = ""
 
     constructor(
         name: string = "",
@@ -19,6 +20,7 @@ export default class Moon {
         conditions: string = "",
         history: string = "",
         fauna: string = "",
+        mapImage: string = ""
     ) {
         this.name = name
         this.hazardLevel = hazardLevel
@@ -29,6 +31,7 @@ export default class Moon {
         this.conditions = conditions
         this.history = history
         this.fauna = fauna
+        this.mapImage = mapImage
     }
 }
 
